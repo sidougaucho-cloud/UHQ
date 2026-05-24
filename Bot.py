@@ -38,7 +38,7 @@ def fournisseur_menu():
 @bot.message_handler(commands=['start'])
 def start(message):
     text = """
-🔥 **Bienvenue sur Le Hanout Tech & Fournisseur !**
+🔥 **Bienvenue sur Le Shop UHQ Tech & Fournisseur !**
 
 Choisis ta catégorie :
     """
@@ -68,8 +68,8 @@ def callback_handler(call):
         bot.send_message(chat_id, f"Tu as sélectionné : **{data}**\n\nContacte le support pour le prix et paiement (@keyzer135).", parse_mode="Markdown")
     
     elif data == "support":
-        bot.send_message(chat_id, "🆘 **Support** :\n@keyzer135")
-
+        bot.send_message(chat_id, "🆘 **Support** :\n@UHQ_7500")
+j
 # ================== LANCEMENT ==================
 if __name__ == "__main__":
     print("🤖 Bot démarré avec succès...")
