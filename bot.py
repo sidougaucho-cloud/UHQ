@@ -36,18 +36,14 @@ def fournisseur_menu():
 
 # ================== START ==================
 
-@bot.message_handler(commands=['start'])
+@@bot.message_handler(commands=['start'])
 def start(message):
-    text = """
-🔥 **Bienvenue sur Le Shop UHQ !**
+    text = "🔥 **Bienvenue sur Le Shop UHQ !**\n\n" \
+           "Nous sommes ravis de vous accueillir.\n" \
+           "Vous trouverez ici une sélection de produits de qualité au meilleur prix.\n\n" \
+           "🆘 SAV : @UHQ_7500\n\n" \
+           "Choisis ta catégorie :"
 
-Nous sommes ravis de vous accueillir.
-Vous trouverez ici une sélection de produits de qualité au meilleur prix.
-
-🆘 SAV : @UHQ_7500
-
-Choisis ta catégorie :
-    """
     bot.send_message(message.chat.id, text, parse_mode="Markdown", reply_markup=main_menu())
 
 # ================== CALLBACKS ==================
